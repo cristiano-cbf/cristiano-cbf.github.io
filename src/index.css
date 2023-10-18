@@ -1,0 +1,57 @@
+* {
+  font-family: 'Lato';
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+  color: unset;
+  cursor: pointer;
+}
+
+
+.card{
+  width: 10rem;  
+  position: relative;
+  border: 0;
+  
+}
+.card img{
+  width: 100%;
+  
+}
+.title{
+  inset: 0;
+  position: absolute;
+  color: white; 
+  font-weight: bold;
+  text-align: center;
+  font-size:large;
+}
+
+.inner img{
+  aspect-ratio: 9/16;
+  object-fit: cover;
+  border-radius: 8px; 
+
+  filter:  sepia(100%) hue-rotate(140deg) 
+  contrast(30%) saturate(2000%) brightness(80%); 
+
+}
+
+.card:hover .inner{
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  filter: blur(0.8px)
+}
+
+.title{
+  transform: translate3d(0%, 70%, 0);
+}
+
+.card:hover .title{
+  transform: translate3d(0%, 30%, 0);
+}
+
+.inner, .title{
+  transition: all 0.5s;
+}

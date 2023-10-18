@@ -1,0 +1,14 @@
+/* Pagina404.css */
+.error-image {
+    width: 100%; /* A imagem ocupará 100% da largura do container */
+    max-width: 25rem; /* Largura máxima para manter a imagem responsiva */
+    height: auto; /* Altura automática para manter a proporção original */
+  }
+  
+  .error-heading {
+    color: grey;
+  }
+  
+  .error-text {
+    color: grey;
+  }
